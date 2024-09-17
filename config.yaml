@@ -1,0 +1,19 @@
+paras_adapt_model:
+  margin_e0: 0.4
+  num_classes: 1000
+  reset_constant_em: 0.2
+  paras_optim:
+    name: SGD
+    lr: 0.00025
+    momentum: 0.9
+    dampening: 0.0
+    weight_decay: 0.0
+    nesterov: true
+  arch: vit_b16_torch
+  dataset: imagenet_c
+  max_len: 3000
+  K: 25
+  gamma: 1
+  mode: l2
+  alpha: 0.99
+  lambda_r: 0.2
